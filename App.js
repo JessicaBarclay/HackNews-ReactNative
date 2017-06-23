@@ -6,9 +6,13 @@ import {
   View
 } from 'react-native';
 import Header from './src/components/Header';
+import Feed from './src/components/Feed';
 
 const CodeHive = () => (
-  <Header headerText={'CodeHive'} />
+  <View>
+    <Header headerText={'CodeHive'} />
+    <Feed />
+  </View>
 );
 
 AppRegistry.registerComponent('CodeHive', () => CodeHive);
